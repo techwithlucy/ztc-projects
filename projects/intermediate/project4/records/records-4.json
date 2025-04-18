@@ -1,0 +1,205 @@
+{
+    "<YOUR_TABLE_NAME>": [
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Amazon EC2" },
+            "definition": { "S": "Amazon Elastic Compute Cloud (EC2) is a web service that provides resizable compute capacity in the cloud, allowing users to run applications on virtual machines." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS CloudWatch" },
+            "definition": { "S": "Amazon CloudWatch is a monitoring and observability service that provides data and actionable insights to monitor cloud resources and applications." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Amazon CloudFront" },
+            "definition": { "S": "Amazon CloudFront is a content delivery network (CDN) service that delivers data, videos, applications, and APIs securely and with low latency." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS IAM" },
+            "definition": { "S": "AWS Identity and Access Management (IAM) allows you to manage access to AWS services and resources securely by creating and controlling AWS users and groups." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS RDS" },
+            "definition": { "S": "Amazon RDS is a managed relational database service that simplifies the process of setting up, operating, and scaling a relational database in the cloud." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS VPC" },
+            "definition": { "S": "Amazon Virtual Private Cloud (VPC) enables you to launch AWS resources into a virtual network that you define, isolated from other virtual networks in AWS." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Amazon Route 53" },
+            "definition": { "S": "Amazon Route 53 is a scalable Domain Name System (DNS) web service designed to route end-user requests to endpoints in a globally distributed manner." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS Elastic Beanstalk" },
+            "definition": { "S": "AWS Elastic Beanstalk is a Platform-as-a-Service (PaaS) offering that makes it easy to deploy and manage applications in the cloud without managing infrastructure." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Amazon DynamoDB" },
+            "definition": { "S": "Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS S3" },
+            "definition": { "S": "Amazon S3 is a scalable object storage service that allows you to store and retrieve any amount of data, at any time, from anywhere on the web." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS Lambda" },
+            "definition": { "S": "AWS Lambda is a serverless compute service that automatically runs your code in response to events, and automatically manages the compute resources for you." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS EKS" },
+            "definition": { "S": "Amazon Elastic Kubernetes Service (EKS) is a managed service that makes it easy to run Kubernetes on AWS without needing to install and operate your own Kubernetes control plane." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS CodePipeline" },
+            "definition": { "S": "AWS CodePipeline is a fully managed continuous integration and continuous delivery (CI/CD) service for automating the build, test, and deploy phases of your release pipeline." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS Step Functions" },
+            "definition": { "S": "AWS Step Functions is a serverless orchestration service that lets you coordinate multiple AWS services into serverless workflows, making it easy to build and update applications." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS CloudFormation" },
+            "definition": { "S": "AWS CloudFormation is a service that helps you model and set up your Amazon Web Services resources so that they can be provisioned and managed in an automated and predictable manner." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS Fargate" },
+            "definition": { "S": "Amazon Fargate is a serverless compute engine for containers that works with Amazon ECS and EKS, letting you run containers without managing servers." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Cloud Service Consumption" },
+            "definition": { "S": "Cloud service consumption refers to how customers use and pay for cloud services, typically on a pay-as-you-go or subscription basis." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Cloud SLA (Service Level Agreement)" },
+            "definition": { "S": "A Cloud Service Level Agreement (SLA) outlines the expected performance and availability levels for a cloud service, often including penalties for unmet targets." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Cloud Integration" },
+            "definition": { "S": "Cloud integration involves connecting cloud-based services with existing on-premises infrastructure, data systems, or other cloud applications to enable seamless data flow." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Cloud-Based Monitoring" },
+            "definition": { "S": "Cloud-based monitoring refers to tools and services that track the performance, availability, and health of cloud-based applications and infrastructure." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Cloud Federation" },
+            "definition": { "S": "Cloud federation enables multiple cloud platforms to work together, allowing applications and resources to be shared seamlessly between different providers or environments." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Cloud Networking" },
+            "definition": { "S": "Cloud networking involves creating and managing network infrastructure in the cloud, including virtual private clouds (VPCs), IP addressing, and connectivity between cloud resources." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Cloud Resource Management" },
+            "definition": { "S": "Cloud resource management involves organizing, allocating, and optimizing the use of cloud resources to ensure efficiency and cost-effectiveness." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Cloud Security Posture Management (CSPM)" },
+            "definition": { "S": "Cloud Security Posture Management (CSPM) refers to tools and processes used to assess and improve the security of cloud environments by ensuring configurations and policies are compliant with industry standards." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Cloud DevOps" },
+            "definition": { "S": "Cloud DevOps refers to the combination of cloud computing and DevOps practices to automate the software development lifecycle and improve collaboration between development and operations teams." }
+          }
+        }
+      }
+    ]
+  }
+  

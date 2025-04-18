@@ -1,0 +1,204 @@
+{
+  "<YOUR_TABLE_NAME>": [
+    {
+      "PutRequest": { 
+        "Item": {
+          "term": { "S": "AWS KMS" },
+          "definition": { "S": "AWS Key Management Service (KMS) allows you to create and control the encryption keys used to encrypt your data." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS Cognito" },
+          "definition": { "S": "Amazon Cognito provides user sign-up, sign-in, and access control to help secure mobile and web apps." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS S3 Transfer Acceleration" },
+          "definition": { "S": "S3 Transfer Acceleration speeds up uploads to Amazon S3 by routing them through Amazon CloudFront's globally distributed edge locations." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS SNS Mobile Push" },
+          "definition": { "S": "AWS SNS Mobile Push allows you to send push notifications to mobile devices via SNS from both iOS and Android platforms." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS Elasticache" },
+          "definition": { "S": "Amazon ElastiCache is a fully managed, in-memory data store that helps improve application performance by caching frequently accessed data." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "Amazon Redshift" },
+          "definition": { "S": "Amazon Redshift is a fully managed data warehouse service that allows fast querying and analytics on large datasets." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS Secrets Manager" },
+          "definition": { "S": "AWS Secrets Manager helps protect access to your applications, services, and IT resources by managing secrets like API keys and database credentials." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS CloudHSM" },
+          "definition": { "S": "AWS CloudHSM provides hardware-based key storage for cryptographic operations to meet compliance requirements for sensitive data." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS Elastic Load Balancer (ELB)" },
+          "definition": { "S": "Elastic Load Balancer automatically distributes incoming application traffic across multiple targets such as EC2 instances." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS X-Ray" },
+          "definition": { "S": "AWS X-Ray helps with debugging and analyzing microservices-based applications by providing end-to-end request tracing." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS Cloud9" },
+          "definition": { "S": "AWS Cloud9 is a cloud-based integrated development environment (IDE) that enables you to write, run, and debug code directly in the browser." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS Systems Manager" },
+          "definition": { "S": "AWS Systems Manager provides operational insights, automates common maintenance tasks, and ensures secure management of your AWS resources." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS CloudFormation StackSets" },
+          "definition": { "S": "AWS CloudFormation StackSets enables you to create, update, or delete AWS resources across multiple accounts and regions." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS Elastic MapReduce (EMR)" },
+          "definition": { "S": "AWS Elastic MapReduce (EMR) is a cloud-native big data platform for processing vast amounts of data using open-source tools like Hadoop and Spark." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS DataSync" },
+          "definition": { "S": "AWS DataSync is a data transfer service that simplifies and accelerates moving data between on-premises storage and AWS services." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "Amazon WorkSpaces" },
+          "definition": { "S": "Amazon WorkSpaces is a managed desktop-as-a-service (DaaS) solution that provides secure cloud desktops to users." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "Amazon WorkDocs" },
+          "definition": { "S": "Amazon WorkDocs is a fully managed, secure content creation, storage, and collaboration service with file synchronization and sharing." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS AppSync" },
+          "definition": { "S": "AWS AppSync is a managed service that simplifies the development of GraphQL APIs by handling real-time updates and data synchronization." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS EventBridge" },
+          "definition": { "S": "Amazon EventBridge is a serverless event bus that makes it easy to connect applications using data from various sources." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS CodeCommit" },
+          "definition": { "S": "AWS CodeCommit is a fully managed source control service that hosts private Git repositories for version-controlled code." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS CodeBuild" },
+          "definition": { "S": "AWS CodeBuild is a fully managed build service that compiles source code, runs tests, and produces artifacts ready for deployment." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS CodeStar" },
+          "definition": { "S": "AWS CodeStar is a unified user interface for managing the development process of software applications from start to finish." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS X-Ray Tracing" },
+          "definition": { "S": "AWS X-Ray provides end-to-end tracing of requests made to your AWS services, enabling you to analyze and debug performance bottlenecks." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS Batch Computing" },
+          "definition": { "S": "AWS Batch enables you to efficiently run hundreds to thousands of batch computing jobs on AWS resources." }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "term": { "S": "AWS RDS Multi-AZ Deployments" },
+          "definition": { "S": "Amazon RDS Multi-AZ deployments provide high availability for database instances by automatically replicating data across multiple availability zones." }
+        }
+      }
+    }
+  ]
+}

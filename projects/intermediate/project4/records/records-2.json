@@ -1,0 +1,205 @@
+{
+    "<YOUR_TABLE_NAME>": [
+      {
+        "PutRequest": { 
+          "Item": {
+            "term": { "S": "Amazon Aurora" },
+            "definition": { "S": "Amazon Aurora is a MySQL and PostgreSQL-compatible relational database that combines the performance and availability of high-end commercial databases with the simplicity and cost-effectiveness of open-source databases." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS Global Accelerator" },
+            "definition": { "S": "AWS Global Accelerator improves the availability and performance of your applications by directing traffic to the optimal endpoint via AWS global network." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS Shield" },
+            "definition": { "S": "AWS Shield is a managed DDoS protection service that safeguards applications running on AWS from network and transport layer attacks." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS Web Application Firewall (WAF)" },
+            "definition": { "S": "AWS WAF helps protect web applications from common web exploits by allowing you to monitor and block malicious HTTP requests." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Amazon Elastic Kubernetes Service (EKS)" },
+            "definition": { "S": "Amazon EKS is a managed Kubernetes service that simplifies the deployment and management of Kubernetes on AWS." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS IoT Core" },
+            "definition": { "S": "AWS IoT Core is a managed cloud platform that lets connected devices interact with cloud applications and other devices securely." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Amazon Route 53" },
+            "definition": { "S": "Amazon Route 53 is a scalable DNS web service designed to provide reliable and cost-effective routing for web applications." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS Step Functions" },
+            "definition": { "S": "AWS Step Functions lets you coordinate multiple AWS services into serverless workflows to build and scale applications quickly." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Amazon Simple Email Service (SES)" },
+            "definition": { "S": "Amazon SES is a cloud-based email sending service that supports transactional and marketing emails." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS Trusted Advisor" },
+            "definition": { "S": "AWS Trusted Advisor provides real-time recommendations to optimize your AWS infrastructure in terms of cost, security, performance, and fault tolerance." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Amazon Rekognition" },
+            "definition": { "S": "Amazon Rekognition is a machine learning service that allows you to add image and video analysis to your applications." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS Glue" },
+            "definition": { "S": "AWS Glue is a fully managed ETL service that makes it easy to prepare and load data for analytics." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Amazon Athena" },
+            "definition": { "S": "Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS CloudTrail" },
+            "definition": { "S": "AWS CloudTrail enables governance, compliance, and operational auditing of your AWS account by recording account activity and API calls." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Amazon S3 Glacier" },
+            "definition": { "S": "Amazon S3 Glacier is a low-cost storage service for archiving and long-term data backup." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS Outposts" },
+            "definition": { "S": "AWS Outposts brings AWS infrastructure and services to your on-premises data centers for a consistent hybrid cloud experience." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Amazon Lex" },
+            "definition": { "S": "Amazon Lex is a service for building conversational interfaces into applications using voice and text." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Amazon Polly" },
+            "definition": { "S": "Amazon Polly turns text into lifelike speech, enabling applications to talk and build new categories of speech-enabled products." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS Lambda Edge" },
+            "definition": { "S": "AWS Lambda@Edge lets you run Lambda functions to customize content delivery from Amazon CloudFront." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS Snowball" },
+            "definition": { "S": "AWS Snowball is a data migration and edge computing device for securely transferring large amounts of data into and out of AWS." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS OpsWorks" },
+            "definition": { "S": "AWS OpsWorks is a configuration management service that provides managed instances of Chef and Puppet for automating server configurations." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS Direct Connect" },
+            "definition": { "S": "AWS Direct Connect enables a dedicated network connection from your on-premises data center to AWS." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS Elastic Beanstalk" },
+            "definition": { "S": "AWS Elastic Beanstalk is a platform-as-a-service (PaaS) offering that makes it easy to deploy and scale web applications." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Amazon QuickSight" },
+            "definition": { "S": "Amazon QuickSight is a business intelligence service that makes it easy to build visualizations and perform ad hoc analysis." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "AWS Ground Station" },
+            "definition": { "S": "AWS Ground Station enables satellite operators to communicate with their satellites and process data using AWS infrastructure." }
+          }
+        }
+      }
+    ]
+  }
+  

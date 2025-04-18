@@ -1,0 +1,205 @@
+{
+    "<YOUR_TABLE_NAME>": [
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Virtualization" },
+            "definition": { "S": "Virtualization is the creation of a virtual version of a resource, such as a server, storage device, or network." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Cloud Computing" },
+            "definition": { "S": "Cloud computing is the delivery of computing services over the internet, including storage, databases, servers, networking, and more." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "SaaS" },
+            "definition": { "S": "Software as a Service (SaaS) is a cloud computing model where software applications are delivered over the internet on a subscription basis." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "IaaS" },
+            "definition": { "S": "Infrastructure as a Service (IaaS) provides virtualized computing resources over the internet, such as servers and storage." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "PaaS" },
+            "definition": { "S": "Platform as a Service (PaaS) offers a platform for developers to build, deploy, and manage applications without managing the underlying infrastructure." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Edge Computing" },
+            "definition": { "S": "Edge computing brings data storage and computation closer to the data source, reducing latency and improving performance." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Public Cloud" },
+            "definition": { "S": "A public cloud is a cloud computing model where services are offered to multiple customers over the internet by a third-party provider." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Private Cloud" },
+            "definition": { "S": "A private cloud is a cloud environment dedicated to a single organization, offering greater control and customization options." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Hybrid Cloud" },
+            "definition": { "S": "A hybrid cloud combines public and private clouds, enabling data and applications to be shared between them." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Serverless Computing" },
+            "definition": { "S": "Serverless computing allows developers to build and run applications without managing the underlying server infrastructure." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Cloud Security" },
+            "definition": { "S": "Cloud security involves policies, controls, and technologies that protect cloud data and applications from threats." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Multi-cloud" },
+            "definition": { "S": "Multi-cloud refers to the use of multiple cloud services from different providers to achieve better flexibility and redundancy." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Cloud Native" },
+            "definition": { "S": "Cloud native refers to designing applications to fully utilize cloud computing capabilities, such as scalability and resilience." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Containers" },
+            "definition": { "S": "Containers are lightweight, portable units of software that package code and its dependencies for consistent operation across environments." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Data Center" },
+            "definition": { "S": "A data center is a facility used to house computing resources, including servers, storage, and networking equipment." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Cloud Backup" },
+            "definition": { "S": "Cloud backup is the process of copying data to a cloud storage service to protect against data loss." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Load Balancing" },
+            "definition": { "S": "Load balancing distributes incoming network traffic across multiple servers to ensure optimal performance and reliability." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Disaster Recovery" },
+            "definition": { "S": "Disaster recovery involves strategies and technologies to restore IT infrastructure and operations after a catastrophic event." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Elasticity" },
+            "definition": { "S": "Elasticity in cloud computing refers to the ability to scale resources up or down dynamically based on demand." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Big Data" },
+            "definition": { "S": "Big data refers to extremely large datasets that can be analyzed computationally to uncover patterns and trends." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Cloud Migration" },
+            "definition": { "S": "Cloud migration is the process of moving data, applications, and workloads to a cloud environment." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Data Sovereignty" },
+            "definition": { "S": "Data sovereignty refers to the concept that data is subject to the laws of the country where it is stored." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Virtual Machine (VM)" },
+            "definition": { "S": "A virtual machine is a software-based simulation of a physical computer, running its own operating system and applications." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Latency" },
+            "definition": { "S": "Latency in cloud computing refers to the delay between a user's request and the cloud service's response." }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "term": { "S": "Bandwidth" },
+            "definition": { "S": "Bandwidth is the maximum amount of data that can be transmitted over a network in a given amount of time." }
+          }
+        }
+      }
+    ]
+  }
+  

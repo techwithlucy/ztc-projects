@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Announcements</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Event Annoucements</h1>
+            <p>Stay tuned for the latest events and announcements!</p>
+            <button onclick="subscribeToEvents()">Subscribe to Events</button>
+        </header>
+
+        <section id="events-container">
+            <h2>Latest Events</h2>
+            <ul id="events-list">
+            </ul>
+            <!-- Button to Show the Create Event Form (Available for All Users Now) -->
+            <button onclick="showCreateEventForm()">Create New Event</button>
+        </section>
+
+        <!-- Create Event Form Section -->
+        <section id="create-event-form" style="display:none;">
+            <h3>Create New Event</h3>
+            <form onsubmit="submitNewEvent(event)">
+                <label for="event-title">Title:</label>
+                <input type="text" id="event-title" required><br>
+                <label for="event-date">Date:</label>
+                <input type="date" id="event-date" required><br>
+                <label for="event-description">Description:</label>
+                <textarea id="event-description" required></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>Subscribe to get notified about new events!</p>
+        </footer>
+
+        <script>
+            // Function to load events from events.json
+            async function loadEvents() {
+                try {
+                    const response = await fetch('events.json');
+                    if (response.ok) {
+                        const events = await response.json();
+                        displayEvents(events);
+                    } else {
+                        console.error("Could not load events.");
+                    }
+                } catch (error) {
+                    console.error("Error fetching events:", error);
+                }
+            }
+
+            // Function to display events on the page
+            function displayEvents(events) {
+                const eventsList = document.getElementById('events-list');
+                eventsList.innerHTML = ''; // Clear current events
+                events.forEach(event => {
+                    const listItem = document.createElement('li');
+                    listItem.innerHTML = `<strong>${event.title}</strong> - ${event.date}<br>${event.description}`;
+                    eventsList.appendChild(listItem);
+                });
+            }
+
+            // Function to show the create event form (available for all users now)
+            function showCreateEventForm() {
+                document.getElementById("create-event-form").style.display = "block";
+            }
+
+            // Handle event form submission
+            async function submitNewEvent(event) {
+                event.preventDefault();
+
+                const title = document.getElementById("event-title").value;
+                const date = document.getElementById("event-date").value;
+                const description = document.getElementById("event-description").value;
+
+                const newEvent = {
+                    title: title,
+                    date: date,
+                    description: description
+                };
+
+                try {
+                    const response = await fetch('<YOUR_CREATE_EVENT_API_ENDPOINT>', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(newEvent)
+                    });
+
+                    const result = await response.json();
+
+                    if (response.ok) {
+                        alert("New event created successfully!");
+                        loadEvents();  // Reload events after creating a new one
+                    } else {
+                        alert("Failed to create new event.");
+                        console.error(result);
+                    }
+                } catch (error) {
+                    alert("Error creating new event. Please try again.");
+                    console.error("Error:", error);
+                }
+            }
+
+            // Subscribe function to integrate with API Gateway and Lambda for SNS subscription
+            async function subscribeToEvents() {
+                const email = prompt("Enter your email to subscribe to event notifications:");
+                if (email) {
+                    try {
+                        const response = await fetch('<YOUR_SUBSCRIBE_API_ENDPOINT>', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ email: email })
+                        });
+
+                        const data = await response.json(); // Parse the response body
+                        console.log("API Response:", data);
+
+                        if (response.ok && data.body) {
+                            const parsedBody = JSON.parse(data.body);  // Parse the 'body' field (which is a string)
+                            if (parsedBody.message) {
+                                alert(parsedBody.message); // Success message from Lambda
+                            } else {
+                                alert("Unexpected response format");
+                                console.error('No message in response body:', parsedBody);
+                            }
+                        } else {
+                            alert("Subscription failed. Please try again.");
+                            console.error(data); // Log the whole response if it doesn't contain 'body' or 'message'
+                        }
+                    } catch (error) {
+                        alert("Error subscribing to events. Please try again later.");
+                        console.error("Error:", error);
+                    }
+                } else {
+                    alert("Email is required for subscription.");
+                }
+            }
+
+            // Load events on page load
+            window.onload = loadEvents;
+        </script>
+    </div>
+</body>
+
+</html>
