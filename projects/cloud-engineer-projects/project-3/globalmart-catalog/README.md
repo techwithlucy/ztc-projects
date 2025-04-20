@@ -24,7 +24,7 @@ https://reactjs-ecommerce-app.vercel.app/
 Clone the project
 
 ```bash
-  git clone [https://github.com/techwithlucy/ztc-projects/tree/main/projects/cloud-engineer-projects/project-3]
+  git clone [https://github.com/techwithlucy/ztc-projects]
 ```
 
 Go to the project directory
