@@ -1,0 +1,181 @@
+.app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: #1f2d1a;
+  font-weight: 700;
+}
+
+/* ---------- Inputs ---------- */
+input[type='text'],
+input[type='number'] {
+  display: block;
+  width: 176px;
+  margin: 0 auto 9px;
+  padding: 6px 8px;
+  font: inherit;
+  font-size: 15px;
+  color: #3a1d0f;
+  background: #ffdcc2;
+  border: 2px solid #8b1a1a;
+  border-radius: 3px;
+}
+
+input[type='text']::placeholder,
+input[type='number']::placeholder {
+  color: #8a6a55;
+}
+
+input[type='text']:focus-visible,
+input[type='number']:focus-visible {
+  outline: 2px solid #8b4513;
+  outline-offset: 2px;
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 2px 0 14px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.checkbox input {
+  margin: 0;
+}
+
+/* ---------- Buttons ---------- */
+button {
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  transition: filter 0.15s;
+}
+
+button:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+button:focus-visible {
+  outline: 3px solid #1f2d1a;
+  outline-offset: 2px;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button.primary {
+  background: #8b4513;
+  color: #fff;
+}
+
+button.secondary {
+  background: #fff7e0;
+  color: #5a3a14;
+  border-color: #8b4513;
+}
+
+button.danger {
+  background: #a32020;
+  color: #fff;
+}
+
+button.small {
+  padding: 0.35em 0.8em;
+  font-size: 13px;
+}
+
+/* The main Add button is narrow, so the label wraps onto two lines (as in the original). */
+.coffee-form button.primary {
+  width: 83px;
+  margin-bottom: 10px;
+}
+
+/* ---------- Cards ---------- */
+.coffee-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.coffee-card {
+  width: 192px;
+  padding: 16px 12px;
+  background: #d9b45f;
+  border-radius: 4px;
+  color: #213547;
+}
+
+.coffee-card h3 {
+  margin: 14px 0 12px;
+  font-size: 17px;
+  color: #1c2833;
+  overflow-wrap: anywhere;
+}
+
+.coffee-card p {
+  margin: 14px 0;
+  font-size: 15px;
+}
+
+.coffee-card .logo {
+  width: 36px;
+  height: 32px;
+}
+
+.coffee-card .detail {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.edit-form .checkbox {
+  margin-bottom: 8px;
+}
+
+/* ---------- Messages ---------- */
+.message {
+  max-width: 420px;
+  margin: 0 auto 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.message.error {
+  background: #fde8e8;
+  color: #8b1a1a;
+  border: 1px solid #8b1a1a;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button {
+    transition: none;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.4em;
+  }
+}
